@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Ejemplo For 3</title>
+</head>
+
+<body>
+    <script>
+         let numero;
+        numero = prompt("Introduce el tamaño del tablero");
+        let tablero;
+        tablero = parseInt(numero);
+        let x;
+        let par = "";
+        let y;
+        let resultado = "";
+for (let ta=1; ta<=tablero; ta = ta + 1){// tamaño total del tablero
+    if (ta % 2 == 0){ // comprobar si la fila es par o impar
+        for (x=0; x<tablero; x = x + 1){ // si la fila es impar hará lo siguiente
+            if (x % 2 == 0){
+        resultado += "X"
+        }
+        else {
+        resultado += "O"
+        }
+    }
+      //fin de bucle x
+      console.log(resultado);
+    resultado = "";
+    }else { 
+        for (y=0; y<tablero; y = y + 1){
+            if (y % 2 == 0){
+                par += "O"
+            }else{
+                par += "X"
+            }
+         }   
+    console.log(par);
+            par = "";
+    }
+} 
+
+</script>
+</body>
+</html>
